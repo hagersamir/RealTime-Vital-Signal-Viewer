@@ -23,13 +23,13 @@ This PyQt-powered application serves as a **real-time vital sign monitoring syst
 ![Screenshot (43)](https://github.com/hagersamir/RealTime-Vital-Signal-Viewer/assets/105936147/3a2943d9-60ae-436e-89c8-1a09fabc0029)
 ### Hide the displayed signal:
 ![Screenshot (44)](https://github.com/hagersamir/RealTime-Vital-Signal-Viewer/assets/105936147/d0362485-e873-4a2e-8cd7-eff52bf21646)
-### displayed signal in both viewers :
+### Displayed signal in both viewers :
 ![Screenshot (45)](https://github.com/hagersamir/RealTime-Vital-Signal-Viewer/assets/105936147/4dab8c43-ac2e-4ecd-b26e-7ddad3fcd0d6)
 ### Move displayed signal in viewer 1 to viewer 2:
 ![Screenshot (46)](https://github.com/hagersamir/RealTime-Vital-Signal-Viewer/assets/105936147/6baee8d6-24f4-4699-beda-b76a0a38f212)
 ### Linking the 2 viewports to work together :
 ![Screenshot (47)](https://github.com/hagersamir/RealTime-Vital-Signal-Viewer/assets/105936147/a09a0e92-aa9f-4c3f-99a6-580d36829378)
-### 2 viewports linked together:
+### linked viewports together:
 ![Screenshot (48)](https://github.com/hagersamir/RealTime-Vital-Signal-Viewer/assets/105936147/93a21e8c-a7b5-49b7-aec1-9e3f288c3136)
 
 ## Installation
