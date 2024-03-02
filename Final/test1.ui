@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1273</width>
+    <height>749</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::CustomContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="1">
+       <widget class="Line" name="line">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QSplitter" name="splitter_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="viewer2_label">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> color :rgb(52, 69, 94)</string>
+         </property>
+         <property name="text">
+          <string>Viewer 2 :</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="1">
+           <widget class="QSplitter" name="splitter_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="PlotWidget" name="graphicsView_v2"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_v2">
+         <property name="title">
+          <string>Controls</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="play_pause_v2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/pause.png</normaloff>imgs/pause.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="replay_v2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/replay.png</normaloff>imgs/replay.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="zoom_in_v2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/zoom-in.png</normaloff>imgs/zoom-in.png</iconset>
+                </property>
+                <property name="shortcut">
+                 <string>2, I</string>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="zoom_out_v2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/zoom-out.png</normaloff>imgs/zoom-out.png</iconset>
+                </property>
+                <property name="shortcut">
+                 <string>2, O</string>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="add_to_rep_v2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/printing.png</normaloff>imgs/printing.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="speed_up_2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/speed up.png</normaloff>imgs/speed up.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="speed_down_2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/speed down.png</normaloff>imgs/speed down.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QSplitter" name="splitter_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QWidget" name="layoutWidget_2">
+               <layout class="QGridLayout" name="gridLayout_2">
+                <item row="0" column="2">
+                 <widget class="QLabel" name="color_signal_label_v2">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::CustomContextMenu</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"> color :rgb(52, 69, 94)</string>
+                  </property>
+                  <property name="text">
+                   <string>Color :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QComboBox" name="Signals_v2">
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 5px; 
+    background-color: gray; 
+    padding: 3px 18px 3px 3px;
+    min-width: 6em;
+    font-family: &quot;Your Font Name&quot;, sans-serif; 
+ color :rgb(52, 69, 94)
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on {
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(/usr/share/icons/crystalsvg/16x16/actions/1downarrow.png);
+}
+
+QComboBox::down-arrow:on {
+    top: 1px;
+    left: 1px;
+}
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <widget class="QLabel" name="label_signal_v2">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::CustomContextMenu</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"> color :rgb(52, 69, 94)</string>
+                  </property>
+                  <property name="text">
+                   <string>Label :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="6">
+                 <widget class="QCheckBox" name="hide_checkbox_signal_v2">
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::CustomContextMenu</enum>
+                  </property>
+                  <property name="text">
+                   <string>Hide</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="Line" name="line_5">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="5">
+                 <widget class="QLineEdit" name="lineEdit_signal_v2">
+                  <property name="toolTip">
+                   <string>Rename Signal </string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+    background-color: #E5E5E5;
+    color: #34455e;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="readOnly">
+                   <bool>false</bool>
+                  </property>
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="7">
+                 <widget class="QPushButton" name="pushButton_move_to_v2">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+    background-color: #475c7a;  
+    border: 2px solid #34455e; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 20px;  
+}
+
+QPushButton:hover {
+    background-color: #34455e;
+    border: 2px solid #475c7a; 
+    cursor: pointer; 
+}
+
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Move To V1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QPushButton" name="pushButton_color_v2">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>ArrowCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+    background-color: #475c7a;  
+    border: 2px solid #34455e; 
+    color: white; 
+    padding: 5px 5px; 
+    border-radius: 2px;  
+}
+
+QPushButton:hover {
+    background-color: #34455e;
+    border: 2px solid #475c7a; 
+    cursor: pointer; 
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QSplitter" name="splitter">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="viewer1_label">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> color :rgb(52, 69, 94)
+</string>
+         </property>
+         <property name="text">
+          <string>Viewer 1 :</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="1">
+           <widget class="QSplitter" name="splitter_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="PlotWidget" name="graphicsView_v1"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_v1">
+         <property name="title">
+          <string>Controls</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="play_pause_v1">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/pause.png</normaloff>imgs/pause.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="replay_v1">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/replay.png</normaloff>imgs/replay.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="zoom_in_v1">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/zoom-in.png</normaloff>imgs/zoom-in.png</iconset>
+                </property>
+                <property name="shortcut">
+                 <string>1, I</string>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="zoom_out_v1">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/zoom-out.png</normaloff>imgs/zoom-out.png</iconset>
+                </property>
+                <property name="shortcut">
+                 <string>1, O</string>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="add_to_rep_v1">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/printing.png</normaloff>imgs/printing.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="speed_up_1">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/speed up.png</normaloff>imgs/speed up.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="speed_down_1">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>imgs/speed down.png</normaloff>imgs/speed down.png</iconset>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QSplitter" name="splitter_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QWidget" name="layoutWidget_3">
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="4">
+                 <widget class="QLabel" name="color_sig5_label_v1">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::CustomContextMenu</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"> color :rgb(52, 69, 94)</string>
+                  </property>
+                  <property name="text">
+                   <string>Color :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="6">
+                 <widget class="QPushButton" name="pushButton_color_v1">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>ArrowCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+    background-color: #475c7a;  
+    border: 2px solid #34455e; 
+    color: white; 
+    padding: 5px 5px; 
+    border-radius: 2px;  
+}
+
+QPushButton:hover {
+    background-color: #34455e;
+    border: 2px solid #475c7a; 
+    cursor: pointer; 
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="7">
+                 <widget class="QLabel" name="label_signal_v1">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::CustomContextMenu</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"> color :rgb(52, 69, 94)</string>
+                  </property>
+                  <property name="text">
+                   <string>Label :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="10">
+                 <widget class="QPushButton" name="pushButton_move_to_v1">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+    background-color: #475c7a;  
+    border: 2px solid #34455e; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 20px;  
+}
+
+QPushButton:hover {
+    background-color: #34455e;
+    border: 2px solid #475c7a; 
+    cursor: pointer; 
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Move To V2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QComboBox" name="Signals_v1">
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 5px; 
+    background-color: gray; 
+    padding: 3px 18px 3px 3px;
+    min-width: 6em;
+    font-family: &quot;Your Font Name&quot;, sans-serif; 
+    color :rgb(52, 69, 94)
+text-align
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on {
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(/usr/share/icons/crystalsvg/16x16/actions/1downarrow.png);
+}
+
+QComboBox::down-arrow:on {
+    top: 1px;
+    left: 1px;
+}
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="9">
+                 <widget class="QCheckBox" name="hide_checkbox_signal_v1">
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::CustomContextMenu</enum>
+                  </property>
+                  <property name="text">
+                   <string>Hide</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="8">
+                 <widget class="QLineEdit" name="lineEdit_signal_v1">
+                  <property name="toolTip">
+                   <string>Rename Signal </string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+    background-color: #E5E5E5;
+    color: #34455e;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="readOnly">
+                   <bool>false</bool>
+                  </property>
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="Line" name="line_6">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1273</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File </string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>Open</string>
+     </property>
+     <addaction name="open_viewer_1"/>
+     <addaction name="open_viewer_2"/>
+    </widget>
+    <widget class="QMenu" name="menuClear">
+     <property name="title">
+      <string>Clear</string>
+     </property>
+     <addaction name="clear_viewer_1"/>
+     <addaction name="clear_viewer_2"/>
+    </widget>
+    <addaction name="menuOpen"/>
+    <addaction name="menuClear"/>
+   </widget>
+   <widget class="QMenu" name="menuzoom_in">
+    <property name="title">
+     <string>Generate</string>
+    </property>
+    <addaction name="actionGenerate_PDF_2"/>
+   </widget>
+   <widget class="QMenu" name="menuLink_Graphs">
+    <property name="title">
+     <string>Link_Graphs</string>
+    </property>
+    <addaction name="actionLink"/>
+    <addaction name="actionUnLink"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuzoom_in"/>
+   <addaction name="menuLink_Graphs"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_2">
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="statusTip">
+    <string>New file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="statusTip">
+    <string>copy file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="statusTip">
+    <string>paste file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionRename">
+   <property name="text">
+    <string>Rename</string>
+   </property>
+  </action>
+  <action name="actionSave_2">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="statusTip">
+    <string>Save file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="open_viewer_1">
+   <property name="text">
+    <string>Viewer 1</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O, Ctrl+1</string>
+   </property>
+  </action>
+  <action name="open_viewer_2">
+   <property name="text">
+    <string>Viewer 2</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O, Ctrl+2</string>
+   </property>
+  </action>
+  <action name="clear_viewer_1">
+   <property name="text">
+    <string>Viewer 1</string>
+   </property>
+  </action>
+  <action name="clear_viewer_2">
+   <property name="text">
+    <string>Viewer 2</string>
+   </property>
+  </action>
+  <action name="actionLink">
+   <property name="text">
+    <string>Link</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionUnLink">
+   <property name="text">
+    <string>UnLink</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionGenerate_PDF">
+   <property name="text">
+    <string>Generate PDF</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionGenerate_PDF_2">
+   <property name="text">
+    <string>Generate PDF</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
